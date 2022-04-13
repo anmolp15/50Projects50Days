@@ -1,0 +1,73 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient( rgb(75, 52, 4), transparent);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#heading{
+    font-size: 5rem;
+    padding: 10px;
+    text-align: center;
+}
+#container-div{
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+.card{
+    height: inherit;
+    width: 150px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    transition: all 1s ease;
+    background-size: cover;
+}
+
+.card:hover {
+    flex-grow: 10;
+}
+.card:hover .div-tag{
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+#card1{
+    background-image: url('./images/one.jpg');
+    flex-grow: 1;
+}
+#card1 .div-tag{
+    opacity: 1;
+}
+#card2{
+    background-image: url('./images/two.jpg');
+}
+#card3{
+    background-image: url('./images/three.jpg');
+}
+#card4{
+    background-image: url('./images/four.jpg');
+}
+#card5{
+    background-image: url('./images/five.jpg');
+}
+#card6{
+    background-image: url('./images/six.jpg');
+}
+
+.div-tag{
+    
+    height: 100%;
+    position: relative;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    opacity: 0;
+    /* text-align: end; */
+}
+
+.div-tag span{
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

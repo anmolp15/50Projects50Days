@@ -1,0 +1,108 @@
+/* basic page setup with css */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    background-color: gray;
+}
+#main{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    transform-origin: top left;
+}
+
+#content{
+    padding: 80px 0px;
+    width: 80%;
+    height: auto;
+    text-align: justify;
+}
+
+#img-container{
+    width: 100%;
+}
+
+#img-container img{
+    width: 100%;
+}
+
+
+
+#nav-button-div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100px;
+    background-color: #f98b88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 100%;
+}
+
+#nav-button-div button{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0px 15px 15px 0px;
+    transition: all 0.5s ease;
+    transform-origin: -100% -100%;
+}
+
+.rotate{
+    transform: rotate(-20deg);
+}
+
+.rotate120{
+    transform: rotate(-120deg);
+}
+
+
+#nav-button-div-cross button{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all 0.5s ease;
+    transform-origin: -100% -100%;
+    transform: rotate(120deg);
+}
+
+
+#menu{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    transition: all .4s ease;
+    transform: translateX(-100%);
+    transition-delay: .4s;
+}
+
+.menu-item{
+    padding: 15px;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: white;
+}
+
+#home{
+    padding-left: 10px;
+}
+#about{
+    padding-left: 25px;
+}
+#contact{
+    padding-left: 40px;
+}

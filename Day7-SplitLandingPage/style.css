@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+#main{
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.item{
+    width: 50%;
+    text-align: center;
+    transition: all .8s ease-in-out;
+    transition-delay: 0.2s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item:hover{
+    width: 150%;
+    /* transform: scale(1.1); */
+}
+
+#ps5{
+    background-image:  linear-gradient(rgba(25, 0, 255, 0.459), rgba(25, 0, 255, 0.459)), url('./images/ps5.jpg');
+}
+#xbox{
+    background-image: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7)), url('./images/xbox.jpg');
+}
+
+.details{
+    padding-top: 80px;
+}
+h1{
+    color: white;
+    font-size: 4rem;
+}
+button{
+    background: none;
+    color: white;
+    border: 0.2px solid white;
+    padding: 15px 40px;
+    font-size: 1rem;
+    transition: all .2s ease-in-out;
+
+}
+button:active{
+    transform: scale(0.98);
+}
+
+#pbtn:hover{
+    background-color: rgb(101, 87, 226);
+}
+
+#xbtn:hover{
+    background-color: green;
+}
